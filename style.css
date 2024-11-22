@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(9, 9, 53);
+
+}
+*{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;   
+}
+h1{
+    font-size: 80px;
+    color: rgb(62, 250, 62);
+    text-align: center;
+    text-shadow: rgb(4, 255, 0) 1px 0 45px;
+   
+}
+.snake{
+    background-color: greenyellow;
+}
+.apple{
+    background-color: red;
+}
+#game-border{
+    width: 500px;
+    height: 500px;
+    border: 10px solid rgb(33, 73, 89);
+    margin: auto;
+}
+
+#game-box{
+    display: grid;
+    background-color: rgba(57, 57, 57, 0.401);
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    grid-template-columns: repeat(20, 25px);
+    grid-template-rows: repeat(20, 25px);
+}
+#menu{
+    display: flex;
+    justify-content: center;
+}
+button{
+    background: none;
+    color: red;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+@media (max-width: 700px) {
+    #game-box{
+        width: 300px;
+        height: 300px;
+        grid-template-columns: repeat(20, 20px);
+        grid-template-rows: repeat(20, 20px);
+    }
+    #game-border{
+        width: 300px;
+        height: 300px;
+        border: 10px solid rgb(33, 73, 89);
+        margin: auto;
+    }
+    
+}
+
+p{
+    text-align: center;
+}
+#scoreT{
+    color: white;
+}
+
+#highScoreT{
+    color: red;
+}
